@@ -1,0 +1,376 @@
+// ::placeholder {
+//   color: lightgray !important;
+// }
+
+// // Will remove it after merge code in.
+
+// /* Other Common Css */
+
+// // Color Classes
+// $colorpallete: (
+//   body-bg: #2f3841,
+//   heading-bg: #262d34,
+//   card-bg: #394650,
+//   card-title-bg: #2c353d,
+// );
+
+// @each $color-name, $color in $colorpallete {
+//   .bg-#{$color-name} {
+//     background-color: $color;
+//   }
+//   .text-#{$color-name} {
+//     color: $color;
+//   }
+// }
+
+// .bg-red {
+//   background-color:$error-color;
+// }
+
+// .text-red {
+//   color: $error-color;
+// }
+
+// // Width Classes
+// $widthdata: (
+//   12: 100%,
+//   11: 91.66666667%,
+//   10: 83.33333333%,
+//   9: 75%,
+//   8: 66.66666667%,
+//   7: 58.33333333%,
+//   6: 50%,
+//   5: 41.66666667%,
+//   4: 33.33333333%,
+//   3: 25%,
+//   2: 16.66666667%,
+//   1: 8.33333333%,
+// );
+
+// .container {
+//   width: 100%;
+//   max-width: 1200px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+// .container:after {
+//   clear: both;
+//   content: "";
+//   display: block;
+// }
+// .clearfix {
+//   clear: both;
+//   &:after {
+//     clear: both;
+//     content: "";
+//     display: table;
+//   }
+// }
+
+// .text-underline {
+//   text-decoration: underline;
+// }
+// .cursor-pointer {
+//   cursor: pointer;
+// }
+// .uppercase {
+//   text-transform: uppercase;
+// }
+// .capitalize {
+//   text-transform: capitalize;
+// }
+// .nowrap {
+//   white-space: nowrap;
+// }
+
+// .fw300 {
+//   font-weight: 300;
+// }
+// .fw400 {
+//   font-weight: 400;
+// }
+// .fw500 {
+//   font-weight: 500;
+// }
+// .fw700 {
+//   font-weight: 700;
+// }
+// .fw900 {
+//   font-weight: 900;
+// }
+// .pull-right {
+//   float: right;
+// }
+// .pull-left {
+//   float: left;
+// }
+// .text-right {
+//   text-align: right;
+// }
+// .text-left {
+//   text-align: left;
+// }
+// .text-center {
+//   text-align: center;
+// }
+// .overflow-hidden {
+//   overflow: hidden;
+// }
+// .max-width-100 {
+//   max-width: 100%;
+// }
+// .no-padding {
+//   padding: 0 !important;
+// }
+// .pos-fix {
+//   position: fixed;
+// }
+// .pos-abs {
+//   position: absolute;
+// }
+// .pos-rel {
+//   position: relative;
+// }
+
+// .display-inline {
+//   display: inline;
+// }
+// .inline-block {
+//   display: inline-block;
+// }
+// .display-block {
+//   display: block;
+// }
+// .display-flex {
+//   display: flex;
+// }
+// .display-none {
+//   display: none;
+// }
+
+// .flex-1 {
+//   flex: 1;
+// }
+
+// .display-grid {
+//   display: grid;
+// }
+
+// $maxValue: 100;
+
+// /* Font Size For common usage Classes */
+// @for $i from 8 through 40 {
+//   .fs#{$i} {
+//     font-size: #{$i}px;
+//   }
+// }
+
+// //  Display and flex classes #######################.
+
+// /* Line Height Classes */
+// @for $v from 14 through 24 {
+//   $i: $v * 2;
+//   .line-height#{$i} {
+//     line-height: $i + px;
+//   }
+// }
+
+// /* Using SCSS variables to store breakpoints */
+// $breakpoint-mobile: 767px;
+// $breakpoint-desktop: 768px;
+
+// // Mobile Css Start
+// @media (max-width: $breakpoint-mobile) {
+//   @each $width, $w in $widthdata {
+//     .col-xs-#{$width} {
+//       width: $w;
+//       display: inline-block;
+//     }
+//   }
+
+//   /* Font Size Classes */
+//   @for $i from 8 through 40 {
+//     .fsm#{$i} {
+//       font-size: #{$i}px;
+//     }
+//   }
+
+//   /* Line Height for mobile Classes */
+//   @for $v from 14 through 24 {
+//     $i: $v * 2;
+//     .lh-#{$i} {
+//       line-height: $i + px;
+//     }
+//   }
+
+//   .flex-col-to-row {
+//     flex-direction: column;
+//   }
+//   .hidden-mobile {
+//     display: none;
+//   }
+
+//   // Margin Padding classes
+//   @for $v from 2 through 30 {
+//     $i: $v * 2;
+//     .pd-#{$i} {
+//       padding: #{$i}px;
+//     }
+//     .pd-l#{$i} {
+//       padding-left: #{$i}px;
+//     }
+//     .pd-t#{$i} {
+//       padding-top: #{$i}px;
+//     }
+//     .pd-r#{$i} {
+//       padding-right: #{$i}px;
+//     }
+//     .pd-b#{$i} {
+//       padding-bottom: #{$i}px;
+//     }
+
+//     .mr-#{$i} {
+//       margin: #{$i}px;
+//     }
+//     .mr-r#{$i} {
+//       margin-right: #{$i}px;
+//     }
+//     .mr-t#{$i} {
+//       margin-top: #{$i}px;
+//     }
+//     .mr-b#{$i} {
+//       margin-bottom: #{$i}px;
+//     }
+//     .mr-l#{$i} {
+//       margin-left: #{$i}px;
+//     }
+//   }
+// }
+
+// // Desktop Specific CSS start
+
+// @media (min-width: $breakpoint-desktop) {
+//   @each $width, $w in $widthdata {
+//     .col-md-#{$width} {
+//       width: $w;
+//       display: inline-block;
+//     }
+//   }
+
+//   .hidden-desktop {
+//     display: none;
+//   }
+//   @for $v from 2 through 30 {
+//     $i: $v * 2;
+//     .padding-#{$i} {
+//       padding: #{$i}px;
+//     }
+//     .padding-l#{$i} {
+//       padding-left: #{$i}px;
+//     }
+
+//     .padding-t#{$i} {
+//       padding-top: #{$i}px;
+//     }
+
+//     .padding-r#{$i} {
+//       padding-right: #{$i}px;
+//     }
+
+//     .padding-b#{$i} {
+//       padding-bottom: #{$i}px;
+//     }
+
+//     .margin-#{$i} {
+//       margin: #{$i}px;
+//     }
+
+//     .margin-r#{$i} {
+//       margin-right: #{$i}px;
+//     }
+
+//     .margin-t#{$i} {
+//       margin-top: #{$i}px;
+//     }
+
+//     .margin-b#{$i} {
+//       margin-bottom: #{$i}px;
+//     }
+
+//     .margin-l#{$i} {
+//       margin-left: #{$i}px;
+//     }
+//   }
+// }
+
+// /* Letter Spacing */
+// @for $i from 1 through 30 {
+//   .ls-#{$i} {
+//     letter-spacing: #{$i/10}px;
+//   }
+// }
+
+// /* Border Radius Classes */
+// @for $i from 2 through 20 {
+//   $value: $i * 2;
+//   .border-radius-#{$value} {
+//     border-radius: #{$value}px;
+//   }
+// }
+// .bora-50cent {
+//   border-radius: 50%;
+// }
+
+// /* Width Classes */
+
+// /* flex-basis classes */
+// @for $i from 4 through 25 {
+//   $value: $i * 4;
+//   .flex-basis-#{$value} {
+//     flex-basis: #{$value}#{"%"};
+//   }
+// }
+// .align-self-start {
+//   align-self: flex-start;
+// }
+// .align-self-center {
+//   align-self: center;
+// }
+// .align-items-center {
+//   align-items: center;
+// }
+// .flex-wrap {
+//   flex-wrap: wrap;
+// }
+// .flex-column {
+//   flex-direction: column;
+// }
+// .flex-center {
+//   display: flex;
+//   align-items: center;
+// }
+// .justify-content-around {
+//   justify-content: space-around;
+// }
+// .justify-space-between {
+//   justify-content: space-between;
+// }
+// .justify-content-center {
+//   justify-content: center;
+// }
+// .justify-content-end {
+//   justify-content: flex-end;
+// }
+
+// @for $i from 0 through 10 {
+//   .flex-grow-#{$i} {
+//     flex-grow: #{$i};
+//   }
+// }
+
+
+
+
+.overflow-hidden {
+    overflow: hidden;
+  }

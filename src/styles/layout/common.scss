@@ -1,0 +1,210 @@
+.app-container {
+  background-color: var(--main-background);
+  height: 100%;
+}
+
+.d-f-a-c-j-c-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.a-i-c {
+  align-items: center;
+}
+
+.t-a-c {
+  text-align: center;
+}
+
+.h-100-p {
+  height: 100%;
+}
+
+.w-100-p {
+  height: 100%;
+}
+
+.m-t-b-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.m-t-b-20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.t-a-l {
+  text-align: left;
+}
+
+.form-bottom-info-text {
+  color: $dv-default-text-color;
+}
+
+.c-p {
+  cursor: pointer;
+}
+
+.ant-form-item-label {
+  text-align: left;
+  label {
+    text-align: left;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.dv-title-text {
+  @include font-family("Poppins", normal);
+  color: $dv-title-text-color;
+  @include font-size(20, 22, 1);
+}
+
+.dv-title-text-black {
+  @include font-family("Poppins", normal);
+  color: $black-color;
+  @include font-size(20, 22, 1);
+}
+
+.dv-desc-text {
+  @include font-family("Poppins", normal);
+  color: $dv-title-text-color;
+  @include font-size(13, 17, 1);
+}
+
+.dv-desc-text-black {
+  @include font-family("Poppins", normal);
+  color: $black-color;
+  @include font-size(13, 17, 1);
+}
+
+.dv-info-text {
+  @include font-family("Poppins", normal);
+  color: $dv-title-text-color;
+  @include font-size(13, 17, 1);
+  text-transform: italic;
+}
+
+.dv-desc-info-black {
+  @include font-family("Poppins", normal);
+  color: $black-color;
+  @include font-size(13, 17, 1);
+  text-transform: italic;
+}
+
+.read-more {
+  color: $dv-primary-color;
+}
+
+.m-l-10 {
+  margin-left: 10px;
+}
+
+.tooltip-info-span-for-headings {
+  margin-left: 3px;
+  display: inline-block !important;
+  vertical-align: middle;
+  cursor: pointer;
+  i {
+    color: $dv-primary-color;
+  }
+}
+
+.tooltip-info-span {
+  width: 15px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  i {
+    color: $dv-primary-color;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.ant-tooltip-inner {
+  background: $white-color;
+  color: $gray-color;
+  @include font-family("Poppins", normal);
+  @include font-size(12, 17, 1);
+  @include card-box-shadow;
+  // font-style: italic;
+  padding: 5px;
+  text-align: center;
+}
+
+.vertical-center-modal .ant-modal {
+  top: 0;
+}
+.vertical-center-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dv-class-center-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dv-class-center-modal {
+  top: 0;
+}
+
+.loader-container {
+  width: 75%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  background: $white-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  opacity: 0.8;
+}
+
+.delete-card {
+  padding: 10px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  z-index: 20;
+  i {
+    font-size: 20px;
+    svg {
+      fill: $dv-primary-color !important;
+    }
+  }
+}
+
+.h-700 {
+  height: 700px;
+}
+
+.w-60-p {
+  width: 60%;
+}
+
+.m-w-370 {
+  max-width: 370px !important;
+}
+
+.error-border {
+  border: 1px solid $error-color !important;
+}
+
+.p-b-35 {
+  padding-bottom: 35px !important;
+}
+
+.ant-modal-close-x {
+  display: none;
+}

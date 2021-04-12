@@ -1,0 +1,56 @@
+.theme-dark {
+  --main-background: #f5f5f5;
+  --header-footer-color: #ffffff;
+  --header-footer-bg-color: #6f6f88;
+  --header-footer-bg-color2: #3b3b48;
+  --menubar-background: #525262;
+  --menubar-color: #f5f5f5;
+  --active-menu-color: #919191;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  @include font-family("Poppins", normal);
+  color: $dv-default-text-color;
+  @include font-size(14,21,1);
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: initial;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  border-style: none;
+  height: auto;
+}
+p {
+  margin-bottom: 10px;
+}
+em {
+  font-style: italic;
+}
+label {
+  display: block;
+}
+b {
+  font-weight: bold;
+}
+
+a{
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}

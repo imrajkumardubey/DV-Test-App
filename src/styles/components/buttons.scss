@@ -1,0 +1,47 @@
+// Default values
+$btn-padding: 10px 30px !default;
+$btn-padding-small: 7px 20px !default;
+$btn-font-size: 14px !default;
+$btn-font-size-small: 12px !default;
+
+// Default button css
+@mixin btn-reset() {
+  font-size: $btn-font-size;
+  padding: $btn-padding;
+  font-family: inherit;
+  display: inline-block;
+  font-weight: 400;
+  color: $white-color;
+  @extend %text-center;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  background-color: $dv-primary-color;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  outline: none;
+  border-radius: 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  max-height: 40px;
+}
+
+// Finally buttons
+.btn {
+  @include btn-reset();
+  height: fit-content;
+}
+
+.btn-outline {
+  background-color: $white-color;
+  color: $dv-primary-color;
+  border-color: $dv-primary-color;
+  &:hover {
+    background-color: $dv-primary-color;
+    color: $white-color;
+  }
+}
+.btn-small {
+  font-size: $btn-font-size;
+  padding: $btn-padding-small;
+}

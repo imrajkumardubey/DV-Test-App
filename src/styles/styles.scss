@@ -1,0 +1,21 @@
+/* Global Style */
+@import './global/browser-reset';
+@import './global/color';
+@import './global/mixins';
+@import './global/fonts';
+@import './global/font-awesome';
+@import './global/common';
+
+/* Layout Style */
+@import './layout/body';
+@import './layout/common';
+@import './layout/core';
+
+
+/* Components Style */
+@import './components/buttons';
+@import './components/checkbox';
+
+
+/* Pages Style */
+@import './pages/home';
