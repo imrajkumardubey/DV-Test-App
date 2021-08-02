@@ -6,10 +6,11 @@ import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 
 import { SlugifyPipe } from 'src/app/utils';
 
-import { commonComponents } from 'src/app/common-components';
+import { components } from './components';
+import { modals } from './modals';
 
 @NgModule({
-  declarations: [...commonComponents],
+  declarations: [...components, ...modals],
   imports: [
     CommonModule,
     FormsModule,
@@ -26,7 +27,8 @@ import { commonComponents } from 'src/app/common-components';
     HttpClientModule,
     HttpClientJsonpModule,
     ReactiveFormsModule,
-    ...commonComponents
+    ...components,
+    ...modals
   ],
   providers: [
     SlugifyPipe,
